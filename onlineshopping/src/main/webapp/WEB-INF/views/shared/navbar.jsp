@@ -14,20 +14,7 @@
 				<div class="btn-group"></div>
 			</div>
 		</div>
-		<div class="col-sm-8">
-			<div class="shop-menu pull-right">
-				<ul class="nav navbar-nav">
-					<li><a href="${contextRoot}/account"><i class="fa fa-user"></i>
-							Home</a></li>
-					<li><a href="${contextRoot}/wishlist"><i
-							class="fa fa-star"></i> About Us</a></li>
-					<li><a href="${contextRoot}/cart"><i
-							class="fa fa-shopping-cart"></i> Contact Us</a></li>
-					<li><a href="${contextRoot}/login"><i class="fa fa-lock"></i>
-							Login</a></li>
-				</ul>
-			</div>
-		</div>
+
 	</div>
 </div>
 </div>
@@ -45,13 +32,15 @@
 					</button>
 				</div>
 				<div class="shop-menu pull-left">
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav ">
-						<li><a href="${contextRoot}/home">Home</a></li>
-						<li id="about"><a href="${contextRoot}/about">About </a>
-						<li id="contact"><a href="${contextRoot}/contact">Contact</a></li>
-					</ul>
-				</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav ">
+							<li><a href="${contextRoot}/home">Home</a></li>
+							<li id="about"><a href="${contextRoot}/about">About </a>
+							<li id="contact"><a href="${contextRoot}/contact">Contact</a></li>
+							<li id="listProducts"><a
+								href="${contextRoot}/show/all/products">View Products</a>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3">

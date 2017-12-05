@@ -7,7 +7,6 @@
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
@@ -19,6 +18,7 @@
 <meta name="author" content="">
 <title>Home | Superman Online</title>
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+<link href="${css}/boss.css" rel="stylesheet">
 <link href="${css}/font-awesome.min.css" rel="stylesheet">
 <link href="${css}/prettyPhoto.css" rel="stylesheet">
 <link href="${css}/price-range.css" rel="stylesheet">
@@ -48,8 +48,7 @@
 
 			<title>Superman online -${title}</title>
 			<script>
-			window.menu='${title}';
-			
+				window.menu = '${title}';
 			</script>
 
 			<!-- navigation comes here -->
@@ -146,7 +145,7 @@
 
 			<!-- page content was here -->
 			<!-- loading the home content -->
-			<c:if test="${userClickHome==true }">
+			<c:if test="${userClickHome ==true }">
 				<%@include file="home.jsp"%>
 			</c:if>
 
@@ -155,12 +154,18 @@
 			<c:if test="${userClickAbout==true }">
 				<%@include file="about.jsp"%>
 			</c:if>
-			
+
 			<!-- loading when clicks contacts -->
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
-			
+
+			<!-- loading when clicks products -->
+			<c:if
+				test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+
 			<footer id="footer">
 				<!-- footer comes here -->
 				<%@include file="./shared/footer.jsp"%>

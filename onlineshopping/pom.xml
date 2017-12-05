@@ -16,6 +16,15 @@
 	</properties>
 	<dependencies>
 
+		<!-- linking backend with front end -->
+		<dependency>
+			<groupId>net.joel</groupId>
+			<artifactId>backend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
+
 
 		<!-- java ee -->
 		<dependency>
